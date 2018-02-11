@@ -13,28 +13,69 @@
 
 <body ng-app="myapp">
 
-
 <navbar></navbar>
 
-
-<div class="container" ng-controller="IndexController" style="padding: 0px;">
-  <div>
-    <iframe width="375" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-122.00660705566408%2C47.74994304216887%2C-121.76559448242189%2C47.88780176702125&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
-  </div>
-    <div class="col-xs-12 cta-box">
-      <div class="media">
-        <div class="media-left" style="padding-right: 0px;">
-          <img src="images/newzealandmudsnail.png" class="media-object" style="width:109px">
-        </div>
-        <div class="media-body" style="padding-top: 14px; padding-left: 14px;">
-          <h4 class="media-heading" style="font-size: 13px;">(1/4) Do you see any <a href="https://nas.er.usgs.gov/queries/factsheet.aspx?SpeciesID=1008">New Zealand mudsnails</a>?</h4>
-          <div style="margin-top: 15px">
-            <span><button type="button" class="btn btn-primary btn-sm" style="margin-right: 8px;">Yes</button></span>
-            <span><button type="button" class="btn btn-primary btn-sm" style="margin-right: 35px;">No</button></span>
-            <span><button type="button" class="btn btn-link btn-sm" style="padding: 5px 13px;">Skip</button></span>
-          </div>
+<div class="container" ng-controller="IndexController">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Local data requests</div> 
+    <div class="panel-body" >
+    
+      <div class="col-xs-12">
+        <div class="well" style="max-height: 300px;overflow: auto;">
+          <form>
+            <h3 class="text-center">Marten Lake requests</h3>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" name="check"> <span class="label-text">Spotted marmot</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" name="check"> <span class="label-text">Sickly pricklies</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" name="check" checked> <span class="label-text">Marred chard</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" name="check"> <span class="label-text">Rotten cotton</span>
+              </label>
+            </div>
+          </form>
         </div>
       </div>
+      
+      <div class="col-xs-12">
+        <div class="well" style="max-height: 300px;overflow: auto;">
+          <form>
+            <h3 class="text-center">Crystal Heights requests</h3>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" name="check"> <span class="label-text">Mountain tigers</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" name="check"> <span class="label-text">Snared bear</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" name="check"> <span class="label-text">Truffle trouble</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" name="check"> <span class="label-text">Angry bees</span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+          
     </div>
   </div>
 </div>
@@ -48,6 +89,7 @@
 <script src="javascripts/app.js",type="application/javascript"></script>
 <script src="javascripts/controllers.js",type="application/javascript"></script>
 <script src="javascripts/directives.js",type="application/javascript"></script>
+
 
 </body>
 </html> 

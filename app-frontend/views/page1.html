@@ -21,18 +21,25 @@
   <div>
     <iframe width="375" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-122.00660705566408%2C47.74994304216887%2C-121.76559448242189%2C47.88780176702125&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
   </div>
-    <div class="col-xs-12 cta-box">
-      <div class="media">
-        <div class="media-left" style="padding-right: 0px;">
-          <img src="images/newzealandmudsnail.png" class="media-object" style="width:109px">
-        </div>
-        <div class="media-body" style="padding-top: 14px; padding-left: 14px;">
-          <h4 class="media-heading" style="font-size: 13px;">(1/4) Do you see any <a href="https://nas.er.usgs.gov/queries/factsheet.aspx?SpeciesID=1008">New Zealand mudsnails</a>?</h4>
-          <div style="margin-top: 15px">
-            <span><button type="button" class="btn btn-primary btn-sm" style="margin-right: 8px;">Yes</button></span>
-            <span><button type="button" class="btn btn-primary btn-sm" style="margin-right: 35px;">No</button></span>
-            <span><button type="button" class="btn btn-link btn-sm" style="padding: 5px 13px;">Skip</button></span>
-          </div>
+  <div class="col-xs-12 cta-box" style="height: 60px; top: -70px;" ng-hide="!showQuest">
+    <div class="media">
+      <div class="media-body" style="padding-top: 14px; padding-left: 14px;">
+        <span class="media-heading" style="font-size: 13px;">4 quests at Alder lake</span>
+        <span style="margin-left: 130px;"><button type="button" class="btn btn-primary btn-sm" style="margin-right: 8px;" ng-click="showQuest = !showQuest;" ng-init="showQuest = true">Start</button></span>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 cta-box" ng-hide="showQuest">
+    <div class="media">
+      <div class="media-left" style="padding-right: 0px;">
+        <img src="images/newzealandmudsnail.png" class="media-object" style="width:109px">
+      </div>
+      <div class="media-body" style="padding-top: 14px; padding-left: 14px;">
+        <h4 class="media-heading" style="font-size: 13px;">(1/4) Do you see any <a href="https://nas.er.usgs.gov/queries/factsheet.aspx?SpeciesID=1008">New Zealand mudsnails</a>?</h4>
+        <div style="margin-top: 15px">
+          <span><button type="button" class="btn btn-primary btn-sm" style="margin-right: 8px;">Yes</button></span>
+          <span><button type="button" class="btn btn-primary btn-sm" style="margin-right: 35px;">No</button></span>
+          <span><button type="button" class="btn btn-link btn-sm" style="padding: 5px 13px;">Skip</button></span>
         </div>
       </div>
     </div>
