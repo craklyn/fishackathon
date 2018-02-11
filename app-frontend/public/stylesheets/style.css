@@ -111,3 +111,41 @@ a.btn-primary {
   border-color: #CCC;
   color: #444;
 }
+
+img.background_appear{
+  animation:load_appear 2s forwards;
+  -webkit-animation: load_appear 1s forwards;
+}
+@keyframes load_appear {
+  from{opacity:0;}
+  to{opacity:1;}
+}@-webkit-keyframes load_appear{
+  from{opacity:0;}
+  to{opacity:1;}  
+}
+
+img.fish_right{
+    position:relative;
+    animation:load_right 2s forwards;
+    -webkit-animation:load_right 1s forwards;
+}
+@keyframes load_right{
+    from{left: -50px;}
+    to{left:0px;}
+}@-webkit-keyframes load_right{
+    from{left:-50px;}
+    to{left:0px;}
+}
+
+img.fish_left{
+    position:relative;
+    animation:load_left 2s forwards;
+    -webkit-animation:load_left 1s forwards;
+}
+@keyframes load_left{
+    from{left: 50px;}
+    to{left:0px;}
+}@-webkit-keyframes load_left{
+    from{left: 50px;}
+    to{left:0px;}
+}
