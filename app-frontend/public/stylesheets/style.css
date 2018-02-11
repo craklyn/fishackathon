@@ -15,6 +15,16 @@ div.col-xs-4 {
   padding-right: 1px;
 }
 
+div.cta-box {
+    font-weight: bold;
+    border-radius: 25px;
+    background: #73AD21;
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    //height: 75px; 
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
