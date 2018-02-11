@@ -7,6 +7,14 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var Web3 = require('./lib/web3');
+
+// dont override global variable
+if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
+    window.Web3 = Web3;
+}
+
+
 
 var app = express();
 
