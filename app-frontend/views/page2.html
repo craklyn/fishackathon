@@ -16,66 +16,36 @@
 <navbar></navbar>
 
 <div class="container" ng-controller="IndexController">
-  <div class="panel panel-primary">
-    <div class="panel-heading">Local data requests</div> 
-    <div class="panel-body" >
-    
-      <div class="col-xs-12">
-        <div class="well" style="max-height: 300px;overflow: auto;">
-          <form>
-            <h3 class="text-center">Marten Lake requests</h3>
-            <div class="form-check">
-              <label>
-                <input type="checkbox" name="check"> <span class="label-text">Spotted marmot</span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label>
-                <input type="checkbox" name="check"> <span class="label-text">Sickly pricklies</span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label>
-                <input type="checkbox" name="check" checked> <span class="label-text">Marred chard</span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label>
-                <input type="checkbox" name="check"> <span class="label-text">Rotten cotton</span>
-              </label>
-            </div>
-          </form>
+  <div class="row">
+    <div class="col-xs-12" style="font-weight: 600; font-size: 20px; color: #111; margin-top: 20px;">Add report</div>
+    <div class="col-xs-12" style="font-weight: 550; font-size: 15px; color: #444; margin-top: 20px;">Alder Lake <span style="font-size: 11px; font-weight: 500;"><a href="#">change location</a></span></div>
+    <div class="col-xs-12" style="font-weight: 550; font-size: 15px; color: #444; margin-top: 6px; margin-bottom:24px;">Feb 11, 2018 9:04 AM <span style="font-size: 11px; font-weight: 500;"><a href="#">change date & time</a></span></div>
+    <div class="col-xs-12" style="color: #444; font-size: 15px; font-weight: 400;">
+      Select what you would like to report:
+      <form class="ng-pristine ng-valid"style="margin-top:16px;">
+        <div class="form-check">
+          <label>
+            <input type="checkbox" name="check" ng-model="invasiveSpecies"> <span class="label-text">Invasive species</span>
+          </label>
         </div>
-      </div>
+        <div class="form-check">
+          <label>
+            <input type="checkbox" name="check" ng-model="algaeBloom"> <span class="label-text">Algae bloom</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="checkbox" name="check" ng-model="fishKills"> <span class="label-text">Fish kills</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="checkbox" name="check" ng-model="endangeredSpecies"> <span class="label-text">Endangered species</span>
+          </label>
+        </div>
+      </form>
       
-      <div class="col-xs-12">
-        <div class="well" style="max-height: 300px;overflow: auto;">
-          <form>
-            <h3 class="text-center">Crystal Heights requests</h3>
-            <div class="form-check">
-              <label>
-                <input type="checkbox" name="check"> <span class="label-text">Mountain tigers</span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label>
-                <input type="checkbox" name="check"> <span class="label-text">Snared bear</span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label>
-                <input type="checkbox" name="check"> <span class="label-text">Truffle trouble</span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label>
-                <input type="checkbox" name="check"> <span class="label-text">Angry bees</span>
-              </label>
-            </div>
-          </form>
-        </div>
-      </div>
-          
+      <button class="btn btn-primary btn-block" style="margin-top: 28px;" ng-show="invasiveSpecies || algaeBloom || fishKills || endangeredSpecies">Start</button>
     </div>
   </div>
 </div>

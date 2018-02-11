@@ -90,3 +90,18 @@ button.btn-primary {
   color: #444;
   
 }
+
+div.form-check{
+  font-size: 15px;
+  font-weight: 400;
+  color: #444;
+  padding-left: 0px;
+}
+input[type=checkbox]{
+  margin-right:6px;
+
+}
+
+label {
+  font-weight: 400;
+}
