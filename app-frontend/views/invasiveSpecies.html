@@ -16,21 +16,48 @@
 
 <navbar></navbar>
 
-
 <div class="container" ng-controller="IndexController">
   <div class="panel panel-primary">
-    <div class="panel-heading">Local data requests</div> 
+    <div class="panel-heading">Biological</div> 
     <div class="panel-body" >
-      <iframe width="315" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-122.00660705566408%2C47.74994304216887%2C-121.76559448242189%2C47.88780176702125&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
-      <h4>We <span style="color: green;font-weight: bold;">share</span> because we <span style="color:deeppink;font-weight: bold;">care</span></h4>
-    </div>
-    <div class="col-xs-12 cta-box">
-      <div>Is an algae bloom visible?</div>
-      <div style="float: right;">
-        <button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-ok"></span> Yes</button>
-        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span> No</button>
-        <button type="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-info-sign"></span> Info</button>
+
+      <div class="media">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" style="height: 128px;" src="http://www.iucngisd.org/gisd/image/ecology/Miang_u5.jpg">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Weatherfish observations</h4>
+          Spot a weatherfish?  Report it!
+        </div>
       </div>
+      
+      <div class="media">
+        <div class="media-body">
+          <h4 class="media-heading">Green sturgeon observations</h4>
+          Spot a green sturgeon?  Report it!
+        </div>
+        <div class="media-right">
+          <a href="#">
+            <img class="media-object" style="height: 128px;" src="https://i.pinimg.com/736x/27/eb/63/27eb6377cfecd0fc9599c529dc56b183--lakes-underwater.jpg">
+          </a>
+        </div>
+
+      </div> 
+
+      <div class="media">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" style="height: 128px;" src="https://s.redditmedia.com/t5_ace4w/styles/profileIcon_63kps20mjs801.jpg?fit=crop&crop=faces%2Centropy&arh=1.0&w=256&h=256&s=77d3983cde8eb16231a5f72a7517d593">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Marmot observations</h4>
+          Spot a marmot?  Report it!
+        </div>
+      </div>      
+    
     </div>
   </div>
 </div>
@@ -44,6 +71,7 @@
 <script src="javascripts/app.js",type="application/javascript"></script>
 <script src="javascripts/controllers.js",type="application/javascript"></script>
 <script src="javascripts/directives.js",type="application/javascript"></script>
+
 
 </body>
 </html> 

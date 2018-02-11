@@ -1,5 +1,5 @@
 //init app module and declare it's dependencies on other modules
-var app = angular.module('myapp', ['myapp.controllers']);
+var app = angular.module('myapp', ['myapp.controllers', 'myapp.directives']);
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'partials/index',
