@@ -14,6 +14,8 @@ if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
     window.Web3 = Web3;
 }
 
+//console.log(Web3)
+//web3.eth.getCoinbase(function(err, cb) { console.log(err, cb); })
 
 
 var app = express();
