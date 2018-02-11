@@ -39,7 +39,7 @@ body {
 }
 
 .footer {
-    background: #73AD21;
+    background: #FFFFFF;
     height:24px; // Replace with the height your footer should be
     width: 100%; // Don't change
     background-image: none;
@@ -49,7 +49,6 @@ body {
     position: fixed;
     bottom: 0pt;
 //    left: 0pt;
-    z-index: 1;
 }   
 
 
