@@ -61,4 +61,4 @@ typings/
 .next
 
 # For ethernet data
-my-eth-chain/myDataDir
+my-eth-chain/myDataDir/
