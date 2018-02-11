@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>H2Flow</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+</head>
+
+<body ng-app="myapp">
+
+<navbar></navbar>
+
+<div class="container" ng-controller="IndexController">
+  <div class="row">
+    <div class="col-xs-12" style="font-weight: 600; font-size: 20px; color: #111; margin-top: 20px;">Add report (1/2)</div>
+    <div class="col-xs-12" style="font-weight: 550; font-size: 15px; color: #444; margin-top: 20px;">Alder Lake <span style="font-size: 11px; font-weight: 500;"><a href="#">change location</a></span></div>
+    <div class="col-xs-12" style="font-weight: 550; font-size: 15px; color: #444; margin-top: 6px; margin-bottom:18px;">Feb 11, 2018 9:04 AM <span style="font-size: 11px; font-weight: 500;"><a href="#">change date & time</a></span></div>
+    <div class="col-xs-12" style="color: #444; font-size: 15px; font-weight: 400;">
+      Invasive species - Zebra Mussels
+
+      <div style="margin-top: 14px; color: #666; font-size:13px;">Tap and hold to mark location</div>
+
+      <img src="images/map1.png" style="width: 100%;margin-top: 4px;" ng-hide="mapClicked" ng-init="mapClicked = false" ng-click="mapClicked = !mapClicked">
+      <img src="images/map2.png" style="width: 100%;margin-top: 4px;" ng-hide="!mapClicked" ng-click="mapClicked = !mapClicked">
+      
+      <a class="btn btn-primary btn-block" style="margin-top: 12px;" href="/page3">Next step: photo and description</a>
+
+    </div>
+  </div>
+</div>
+
+<footer></footer>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js",type="application/javascript"></script>
+
+<script src="javascripts/app.js",type="application/javascript"></script>
+<script src="javascripts/controllers.js",type="application/javascript"></script>
+<script src="javascripts/directives.js",type="application/javascript"></script>
+
+
+</body>
+</html> 

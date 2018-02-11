@@ -87,8 +87,7 @@ button.btn-primary {
   padding: 5px 18px; 
   background-color: #EEE;
   border-color: #CCC;
-  color: #444;
-  
+  color: #444;  
 }
 
 div.form-check{
@@ -104,4 +103,11 @@ input[type=checkbox]{
 
 label {
   font-weight: 400;
+}
+
+a.btn-primary {
+  padding: 5px 18px; 
+  background-color: #EEE;
+  border-color: #CCC;
+  color: #444;
 }
