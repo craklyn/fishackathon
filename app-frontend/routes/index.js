@@ -2,6 +2,7 @@ var path = require('path');
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
+var Web3 = require('web3');
 
 router.get('/index', function(req, res) {
     fs.readFile('views/index.html', function (err, html) {
