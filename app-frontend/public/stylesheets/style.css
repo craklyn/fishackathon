@@ -17,11 +17,18 @@ div.col-xs-4 {
 
 div.cta-box {
     font-weight: bold;
-    border-radius: 25px;
-    background: #73AD21;
-    padding-top: 15px; 
+    background-color: #FFF;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #888;
+    width: 360px;
+    height: 111px;
+    margin-left: 8px;
+    position: relative;
+    top: -120px;
+    padding-top: 0px; 
     padding-bottom: 15px; 
-    padding-left: 20px; 
+    padding-left: 0px; 
     padding-right: 20px; 
     //height: 75px; 
 }
@@ -30,7 +37,12 @@ div.cta-box {
 -------------------------------------------------- */
 html {
   position: relative;
-  min-height: 100%;
+  margin-left: 200px;
+  max-width: 383px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #888;
+  height: 667px;
 }
 body {
   /* Margin bottom by footer height */
@@ -38,17 +50,42 @@ body {
   margin-bottom: 60px;
 }
 
+// Glyphicon circle definition
+.glyphicon.glyphicon-one-fine-dot:before {
+    content: "\25cf";
+    font-size: 1.5em;
+    color: black;
+}
+
+nav.navbar {
+  border: 0px;
+}
+
+div.container-footer {
+  max-width: 375px;
+  padding: 0px;
+}
+div.row-footer {
+  margin: 0px;
+}
+
 .footer {
-    background: #FFFFFF;
-    height:24px; // Replace with the height your footer should be
+    max-width: 375px;
+    height:42px; // Replace with the height your footer should be
+    padding-left: 0px;
     width: 100%; // Don't change
     background-image: none;
     background-repeat: repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
-    position: fixed;
-    bottom: 0pt;
-//    left: 0pt;
-}   
+    position: absolute;
+    top: 620px;
+}
 
-
+button.btn-primary {
+  padding: 5px 18px; 
+  background-color: #EEE;
+  border-color: #CCC;
+  color: #444;
+  
+}
